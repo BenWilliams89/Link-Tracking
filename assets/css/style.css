@@ -1,0 +1,38 @@
+/* Google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+
+* {
+    box-shadow: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(65, 231, 189);
+}
+
+h1, h2,h3,h4 {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Zain", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+}
+
+nav {
+    background-color: rgba(13, 30, 104, 0.919);
+    
+}
+
+nav ul { /* This is the bullet points (the ul) */
+    list-style: none;
+}
+
