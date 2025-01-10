@@ -11,10 +11,13 @@
 
 body {
     min-height: 100vh;
-    background-color: rgb(65, 231, 189);
+    background-color: rgb(243, 248, 247);
 }
 
-h1, h2,h3,h4 {
+h1, 
+h2,
+h3,
+h4 {
     font-family: "Tinos", serif;
     font-weight: 400;
     font-style: normal;
@@ -29,10 +32,35 @@ p {
 
 nav {
     background-color: rgba(13, 30, 104, 0.919);
-    
+
 }
 
 nav ul { /* This is the bullet points (the ul) */
+    width: 100%;
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #513b3b;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
 
