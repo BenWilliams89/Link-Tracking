@@ -11,7 +11,7 @@
 body {
     min-height: 100vh;
     min-height: 100dvh;
-    background-color: rgb(243, 248, 247);
+    background-color: rgb(255, 255, 255);
 }
 
 h1, 
@@ -38,7 +38,7 @@ nav ul { /* This is the bullet points (the ul) */
     width: 100%;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 nav li {
@@ -76,7 +76,7 @@ nav li:last-child{
     background-color: rgba(13, 30, 104, 0.919);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
-    display: none; /* This hides the menu icon used in the sidebar nav */
+    display: flex; /* This hides the menu icon used in the sidebar nav */
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
