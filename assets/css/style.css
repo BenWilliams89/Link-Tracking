@@ -3,7 +3,6 @@
 
 
 * {
-    box-shadow: none;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,6 +10,7 @@
 
 body {
     min-height: 100vh;
+    min-height: 100dvh;
     background-color: rgb(243, 248, 247);
 }
 
@@ -32,7 +32,6 @@ p {
 
 nav {
     background-color: rgba(13, 30, 104, 0.919);
-
 }
 
 nav ul { /* This is the bullet points (the ul) */
@@ -63,4 +62,30 @@ nav li:first-child{
     margin-right: auto;
 }
 
+nav li:last-child{
+    margin-left: auto;
+}
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(13, 30, 104, 0.919);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none; /* This hides the menu icon used in the sidebar nav */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
