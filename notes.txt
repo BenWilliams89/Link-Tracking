@@ -1,0 +1,24 @@
+Here is my idea:
+
+- End goal = user has a link that I produce and uses it for their main social media link
+
+- The link will produce a automated email saying how many clicks occured that day/week/month - one link = free
+    - Extra features being adding extra reports & more then one link for each social media channel = multiple links/reports = paid
+
+- The link will be a UTM from google analytics
+
+- Questions to answer:
+    - Will a user need a GA account already or can I create one for them when they sign up to my link
+        - will chatgpt etc help to automate a user to create a account from within my software
+    
+    - What details/user information do I need to capture when a user signs up to my software
+        - fname, lname, email, google property id, socila media accounts - LinkedIn, Instagram, TikTok, Twitter to start
+
+    - What databases and ERD is required when storing the information 
+
+    - What is the offer I will present on my website
+
+    - What are the use cases of why people would use the app
+
+    
+
