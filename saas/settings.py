@@ -33,7 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-benwilliams-linktrackin-z86rqrhnf8d.ws.codeinstitute-ide.net',]
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-benwilliams-linktrackin-z86rqrhnf8d.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = ['https://8000-benwilliams-linktrackin-z86rqrhnf8d.ws.codeinstitute-ide.net',"https://*.herokuapp.com"]
 
 # Application definition
 
