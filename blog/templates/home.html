@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<h1>Post</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Views Part 1</title>
-</head>
-
-<body>
-    <h1>Hello Ben, This is my new home page</h1> <br><hr>
-    <h2>Posts list</h2>
-    {% for post in object_list %}
-    <h2>{{post.title}}</h2>
-    <p>{{post.excerpt}}</p>
-    <p>Author: {{post.author}}</p>
-    {% endfor %}
-</body>
-
-</html>
-
-
-<h1>Hello Ben, This is my new home page</h1>
+<ul>
+{% for post in object_list %} <!--This loops through all blogs and prints to screen the following-->
+    <li>{{post.title }} - {{post.author.first_name }} {{post.author.last_name }}<br>
+    {{post.body }}</li>
+{% endfor%}
+</ul>
