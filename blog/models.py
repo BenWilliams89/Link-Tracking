@@ -20,7 +20,7 @@ class Post(models.Model):
         ordering = ["created_on"]
     
     def __str__(self):
-        return self.title + '|' +str(self.author)
+        return self.title + '|' + str(self.author)
 
 # another way to write the above is:
 
