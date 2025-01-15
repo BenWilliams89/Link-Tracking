@@ -6,6 +6,15 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here. Everytime i change/update the model make a migration
 
+class Category(models.Model):
+     name = models.CharField(max_length=200, unique=True)
+
+     def __str__(self):
+        return self.name
+    
+     def get_absolute_url(self):
+        return reverse('home')
+
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     title_tag = models.CharField(unique=True, max_length=200,)
@@ -16,6 +25,7 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
+    category = models.CharField(max_length=200, default='chatgpt')
 
     class Meta:
         ordering = ["created_on"]
