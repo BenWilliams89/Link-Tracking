@@ -21,10 +21,3 @@ class ArticleDetailView(DetailView):
     template_name = 'article_details.html'
 
 
-def removePostsView(request):
-    posts = Post.objects.all()
-    for post in posts:
-        post.delete()
-        post.save()
-        
-    return HttpResponse('Success')
