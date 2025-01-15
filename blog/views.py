@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from django.views.generic import ListView, DetailView
 from .models import Post
 
@@ -19,3 +19,12 @@ class HomeView(ListView):
 class ArticleDetailView(DetailView):
     model = Post
     template_name = 'article_details.html'
+
+
+def removePostsView(request):
+    posts = Post.objects.all()
+    for post in posts:
+        post.delete()
+        post.save()
+        
+    return HttpResponse('Success')

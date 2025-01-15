@@ -3,10 +3,11 @@ from django.contrib.auth.models import User
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
-# Create your models here.
+# Create your models here. Everytime i change/update the model make a migration
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
+    title_tag = models.CharField(unique=True, max_length=200,)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
     body = models.TextField()
