@@ -1,16 +1,25 @@
 {% extends 'base.html' %}
-{% block title %}Add Blog Posts{%endblock%}
+{% block title %}Add Blog Posts{% endblock %}
 {% block content %}
 
 
+{% if user.is_authenticated %}
+    <h1>Add A Blog Post</h1>
+    <br><br>
 
-<h1>Add A Blog Post</h1>
-<div class="form-group">
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button class="btn btn-success">Upload</button>
-</div>
+    <div class="form-group">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-success">Upload</button>
+    </div>
+
+{% else %}
+
+<h2>No Access</h2>
+
+{% endif %}
+
 
 
 {% endblock %}
