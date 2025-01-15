@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from django.views.generic import ListView, DetailView, CreateView
 from .models import Post
+from .forms import PostForm
 
 # Create your views here.
 
@@ -23,5 +24,7 @@ class ArticleDetailView(DetailView):
 
 class addPostView(CreateView):
     model = Post
+    form_class = PostForm
     template_name = 'add_posts.html'
-    fields = '__all__'
+    #fields = '__all__'
+    #fileds = ('title', 'body') - this can bring through certain fields and not all

@@ -5,12 +5,12 @@
 
 
 <h1>Add A Blog Post</h1>
-
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button class="btn btn-success">Upload</button>
-
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-success">Upload</button>
+</div>
 
 
 {% endblock %}
